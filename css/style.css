@@ -1,0 +1,189 @@
+:root {
+    --primary-rgb: 68, 54, 39;
+    --secondary-rgb: 217, 131, 36;
+    --body-rgb: 242, 246, 208;
+    --body-secondary-rgb: 239, 220, 171;
+    --shadow-color: rgba(0, 0, 0, .25);
+    --padding-inline: 3rem;
+    --box-size: 150px;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    background-color: rgb(var(--body-rgb));
+    font-family: "Karla";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0px;
+}
+
+header {
+    margin-bottom: 3.6rem;
+    padding-inline: var(--padding-inline);
+    padding-block: 1.5rem;
+    background-color: rgb(var(--body-secondary-rgb));
+    box-shadow: 0px 3px 10px var(--shadow-color);
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.title {
+    margin: 0px;
+    color: rgb(var(--primary-rgb));
+    font-weight: 800;
+    font-size: 28px;
+}
+
+main {
+    padding-inline: var(--padding-inline);
+    padding-block: var(--padding-block);
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    column-gap: 1.5rem;
+    justify-content: space-evenly;
+}
+
+article {
+    width: 500px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: rgb(var(--body-secondary-rgb));
+    box-shadow: 0px 0px 10px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(var(--secondary-rgb)) 5px;
+}
+
+article .title {
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-block: 0.1rem;
+}
+
+.box-container .side {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.box {
+    width: var(--box-size);
+    height: var(--box-size);
+    background-color: transparent;
+    border: solid rgb(var(--primary-rgb)) 4px;
+    margin-inline: 0.7rem;
+}
+
+.box.area {
+    background-color: rgba(var(--primary-rgb), .25);
+}
+
+.formula {
+    font-size: 20px;
+    margin-bottom: 2.4rem;
+}
+
+.formula-title {
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+form input[type="number"] {
+    background-color: rgb(var(--body-rgb));
+    border: solid rgb(var(--secondary-rgb)) 3px;
+    border-radius: 4px;
+    padding: 0.7rem;
+    font-size: 18px;
+    color: rgb(var(--primary-rgb));
+}
+
+form input[type="number"]:focus-visible {
+    outline: none;
+    box-shadow: 0px 0px 8px var(--shadow-color);
+    border-color: rgba(var(--primary-rgb), .8);
+}
+
+.submit-container {
+    margin-top: 1rem;
+    margin-bottom: 2.1rem;
+}
+
+.submit-container button[type="submit"] {
+    background-color: rgb(var(--secondary-rgb));
+    border: none;
+    border-radius: 6px;
+    padding: 0.85rem 1.4rem;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: rgb(var(--primary-rgb));
+}
+
+.submit-container button[type="submit"]:hover {
+    opacity: 0.95;
+    box-shadow: 0px 0px 8px var(--shadow-color);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 4.5rem;
+    padding-inline: var(--padding-inline);
+    padding-block: 1.2rem;
+    background-color: rgb(var(--body-secondary-rgb));
+    box-shadow: 0px -3px 10px var(--shadow-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-developer p {
+    font-weight: 600;
+    font-size: 19px;
+    color: rgb(var(--primary-rgb));
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.3rem;
+}
+
+.footer-links>a {
+    height: 48px;
+}
+
+.footer-links img:hover {
+    opacity: 0.8;
+}

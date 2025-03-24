@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This web is used to calculate square's perimeter or area.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/ic_calculator_secondary.webp" type="image/webp">
+    <title>Web Squares Calculator</title>
+</head>
+<body>
+    <div>
+        <header>
+            <img src="img/ic_calculator.webp" alt="Calculator Icon">
+            <h1 class="title">Web Squares Calculator</h1>
+        </header>
+        <main>
+            <article id="perimeter">
+                <h2 class="title">Perimeter Calculator</h2>
+                <div class="box-container">
+                    <div>
+                        <p class="side">s</p>
+                    </div>
+                    <div>
+                        <p class="side">s</p>
+                        <div class="box perimeter"></div>
+                        <p class="side">s</p>
+                    </div>
+                    <div>
+                        <p class="side">s</p>
+                    </div>
+                </div>
+                <p class="formula">
+                    <span class="formula-title">Formula:</span> <br>
+                    - s+s+s+s <br>
+                    - s*4
+                </p>
+    
+                <form action="#" onsubmit="return calculatePerimeter()">
+                    <label for="perimeter-input">Square's side (s): </label>
+                    <input type="number" name="s" id="perimeter-input" class="input">
+                    <div class="submit-container">
+                        <button type="submit">Calculate</button>
+                    </div>
+                    <label for="perimeter-output">Perimeter of Square: </label>
+                    <input type="number" name="out" id="perimeter-output" class="output" readonly>
+                </form>
+            </article>
+            <article id="area">
+                <h2 class="title">Area Calculator</h2>
+                <div class="box-container">
+                    <div>
+                        <p class="side">s</p>
+                    </div>
+                    <div>
+                        <p class="side">s</p>
+                        <div class="box area"></div>
+                        <p class="side">s</p>
+                    </div>
+                    <div>
+                        <p class="side">s</p>
+                    </div>
+                </div>
+                <p class="formula">
+                    <span class="formula-title">Formula:</span> <br>
+                    - s*s <br>
+                    - s^2
+                </p>
+                
+                <form action="#" onsubmit="return calculateArea()">
+                    <label for="area-input">Square's side (s): </label>
+                    <input type="number" name="s" id="area-input" class="input">
+                    <div class="submit-container">
+                        <button type="submit">Calculate</button>
+                    </div>
+                    <label for="area-output">Area of Square: </label>
+                    <input type="number" name="out" id="area-output" class="output" readonly>
+                </form>
+            </article>
+        </main>
+    </div>
+    <div>
+        <footer>
+            <div class="footer-developer">
+                <p>Developed by: Rizky Sugiharto</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/RizkySugiharto" target="_blank">
+                    <img src="img/ic_github.webp" alt="Github Icon">
+                </a>
+                <a href="https://www.linkedin.com/in/rizky-sugiharto-6a696734a/" target="_blank">
+                    <img src="img/ic_linkedin.webp" alt="LinkedIn Icon">
+                </a>
+                <a href="http://discordapp.com/users/856006230907289611" target="_blank">
+                    <img src="img/ic_discord.webp" alt="Discord Icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
